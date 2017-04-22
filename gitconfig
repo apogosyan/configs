@@ -1,0 +1,15 @@
+[user]
+        name = Alexander Pogosyan
+        email = alexpogosyan@gmail.com
+
+[core]
+	excludesfile = ~/.gitignore
+
+[alias]
+        st = status
+        co = checkout
+        ci = commit
+        di = diff --staged
+        graph = log --decorate --oneline --graph --all
+        unstage = reset HEAD --
+
