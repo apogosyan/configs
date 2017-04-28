@@ -1,4 +1,6 @@
 export PS1='\w$ '
+#export PS1="\[\033[01;32m\][user@server]\[\033[0m\]\w$ "
+
 export EDITOR='vim'
 
 alias ll='ls -alF'
