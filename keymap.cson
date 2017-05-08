@@ -31,16 +31,26 @@
 # Atom Flight Manual:
 # http://flight-manual.atom.io/using-atom/sections/basic-customization/#_cson
 
+'atom-workspace atom-text-editor':
+  'cmd-w': 'atomic-emacs:copy-region-as-kill'
+  'cmd-<': 'core:move-to-top'
+  'cmd->': 'core:move-to-bottom'
+  'cmd-b': 'atomic-emacs:backward-word'
+  'cmd-f': 'atomic-emacs:forward-word'
+  'cmd-v': 'atomic-emacs:scroll-down'
+  'cmd-delete': 'atomic-emacs:backward-kill-word'
+  'cmd-d': 'atomic-emacs:kill-word'
+  'cmd-backspace': 'atomic-emacs:backward-kill-word'
+
 'atom-workspace':
   'ctrl-x ctrl-f': 'advanced-open-file:toggle'
 
 'atom-text-editor':
   'ctrl-i': 'editor:auto-indent'
-  'alt-\\': 'editor:toggle-current-row-folding'
 
 'body':
+  'cmd-shift-v': 'core:paste'
   'ctrl-tab ^ctrl': 'unset!'
   'ctrl-tab': 'pane:show-next-item'
   'ctrl-shift-tab ^ctrl': 'unset!'
   'ctrl-shift-tab': 'pane:show-previous-item'
-
