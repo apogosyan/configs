@@ -1,9 +1,9 @@
 [user]
-        name = Alexander Pogosyan
+        name = Alex Pogosyan
         email = alexpogosyan@gmail.com
 
 [core]
-	excludesfile = ~/.gitignore
+	excludesfile = ~/.gitexcludes
 
 [alias]
         st = status
@@ -12,4 +12,25 @@
         di = diff --staged
         graph = log --decorate --oneline --graph --all
         unstage = reset HEAD --
+	b = branch
 
+[color]
+	branch = auto
+	diff = auto
+	status = auto
+
+[color "branch"]
+	current = yellow reverse
+	local = yellow
+	remote = green
+
+[color "diff"]
+	meta = yellow bold
+	frag = magenta bold
+	old = red bold
+	new = green bold
+
+[color "status"]
+	added = yellow
+	changed = green
+	untracked = cyan
