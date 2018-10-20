@@ -6,11 +6,11 @@
 (scroll-bar-mode 0)
 (tool-bar-mode 0)
 (menu-bar-mode 0)
-(set-default-font "Inconsolata 11")
+(set-default-font "Monaco 13")
 (column-number-mode t)
 (line-number-mode t)
-;(setq mac-command-modifier 'meta)
-;(setq mac-option-modifier 'meta)
+(setq mac-command-modifier 'meta)
+(setq mac-option-modifier 'meta)
 (setq-default indent-tabs-mode nil)
 (load-theme 'tango-dark)
 
@@ -27,7 +27,7 @@
 
 (defun my:window-setup-hook ()
  (when window-system
-   (set-frame-size (selected-frame) 80 45)))
+   (set-frame-size (selected-frame) 140 80)))
 (setq window-setup-hook 'my:window-setup-hook)
 
 (require 'package)
@@ -36,7 +36,7 @@
 
 (package-initialize)
 
-(elpy-enable)
+;(elpy-enable)
 
 (add-to-list 'exec-path "/usr/local/bin")
 
@@ -79,7 +79,9 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(package-selected-packages (quote (scss-mode cider slime web-mode neotree elpy))))
+ '(package-selected-packages
+   (quote
+    (haskell-mode scss-mode cider slime web-mode neotree elpy))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -88,7 +90,7 @@
  )
 
 
-(require 'web-mode)
+;(require 'web-mode)
 (add-to-list 'auto-mode-alist '("\\.html?\\'" . web-mode))
 (setq web-mode-engines-alist
       '(("django"    . "\\.html\\'"))
@@ -108,5 +110,5 @@
 
 (add-hook 'web-mode-hook  'my-web-mode-hook)      
 
-(setq inferior-lisp-program "/usr/bin/sbcl")
+(setq inferior-lisp-program "/usr/local/bin/sbcl")
 (setq slime-contribs '(slime-fancy))
