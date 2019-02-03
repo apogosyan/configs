@@ -1,22 +1,22 @@
 [user]
-        name = Alex Pogosyan
-        email = alexpogosyan@gmail.com
+  name = Alex Pogosyan
+  email = alexpogosyan@gmail.com
 
 [core]
-	excludesfile = ~/.gitexcludes
+	excludesfile = ~/.gitignore
 
 [alias]
-        st = status
-        co = checkout
-        ci = commit
-        di = diff --staged
-        graph = log --decorate --oneline --graph --all
-        unstage = reset HEAD --
-	b = branch
+  st = status
+  co = checkout
+  ci = commit
+  di = diff --staged
+  graph = log --decorate --oneline --graph --all
+  unstage = reset HEAD --
+  b = branch
 
 [color]
-	branch = auto
-	diff = auto
+  branch = auto
+  diff = auto
 	status = auto
 
 [color "branch"]

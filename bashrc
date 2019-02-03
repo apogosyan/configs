@@ -14,4 +14,4 @@ alias la='ls -A'
 alias lh='ls -lah'
 alias ta='tmux a || tmux'
 
-export PATH="/usr/local/opt/python/libexec/bin:$PATH"
+export PATH="/Users/alex/bin:/usr/local/opt/python/libexec/bin:$PATH"
